@@ -1,7 +1,7 @@
 {
-  "name": "dina-bot",
+  "name": "SHADOW-TECH",
   "version": "1.0.0",
-  "description": "Multi-session WhatsApp Bot with Plugin System",
+  "description": "Multi-session WhatsApp Bot with Plugin System 2 Shadow Technically",
   "main": "pair.js",
   "scripts": {
     "start": "node pair.js",

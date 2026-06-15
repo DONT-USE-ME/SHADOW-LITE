@@ -290,13 +290,15 @@ async function Pair(number, res = null) {
                 }, 30000);
 
                 try {
-                    const jid = xnumber + '@s.whatsapp.net';
-                    await sock.sendMessage(jid, {
-                        text: `*Bot Active!*\n\nYour bot is now connected successfully.\nPairing code used: *${pairingCode ?? 'Already registered'}*`
-                    });
-                } catch (e) {
-                    console.error('Welcome message failed:', e);
-                }
+    const jid = xnumber + '@s.whatsapp.net';
+    await sock.sendMessage(jid, {
+        image: { url: 'https://raw.githubusercontent.com/DONT-USE-ME/MINI_DATABASE/main/shadow_official.jpg' }, // ඔබේ Image URL එක මෙතනට දාන්න
+        caption: `*Bot Active!*\n\nYour bot is now connected successfully.\nPairing code used: *${pairingCode ?? 'Already registered'}*`
+    });
+} catch (e) {
+    console.error('Welcome message failed:', e);
+}
+
             }
         });
 
